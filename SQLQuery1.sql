@@ -1,5 +1,5 @@
 
-/*select * from PortfolioProject..CovidDeaths
+select * from PortfolioProject..CovidDeaths
 order by 3,4
 
 select Location,date,total_cases,new_cases,total_deaths,population
@@ -66,7 +66,7 @@ join PortfolioProject..CovidVaccination vca
 on dea.location=vca.location
 and dea.date=vca.date
 where dea.continent is not null
-order by 2,3 */
+order by 2,3
 
 -- To perform task on currently made column
 with pop (continent, location, date, population,vaccinations, RollingPeopleVaccination)
